@@ -11,7 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: npm ci # 相当于npm install
-    - run: npm ci vuepress
     - run: npm run build
       
     - name: Deploy wiki/gh-pages
