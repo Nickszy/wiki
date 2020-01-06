@@ -6,6 +6,8 @@
     },
     "devDependencies": {
         "gh-pages": "^2.1.1",
-        "vuepress": "^1.2.0"
+        "vuepress": "^1.2.0",
+        "@vuepress/plugin-back-to-top": "^1.2.0",
+        "@vuepress/plugin-nprogress": "^1.2.0"
     }
 }
