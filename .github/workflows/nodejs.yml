@@ -1,0 +1,14 @@
+name: blog deploy
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: npm ci # 相当于npm install
+    - run: npm run deploy
