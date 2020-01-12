@@ -5,7 +5,7 @@ sidebar: false
 # 睁眼看世界
 
 [二级市场投资](invest)
-[金融工程]
+[金融工程](financial_engineering)
 [风险管理]
   风险指标
 [一级市场]

@@ -18,3 +18,27 @@
 ### 数据提取
 ### 数据规整
 ### 工具箱
+
+# 大数据
+
+海量的数据多少
+
+## 数据存储
+
+[mysql]()
+[hadoop]()
+
+## 数据处理
+
+pandas
+[人工智障](../ai/README.md)
+spark
+
+## 网站
+
+[Kaggle](./Kaggle.md)
+
+# 教程
+
+1. [first_learn](first_learn)
+2. [机器学习](machine_learning)

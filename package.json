@@ -5,9 +5,10 @@
         "deploy": "start deploy.sh"
     },
     "devDependencies": {
-        "gh-pages": "^2.1.1",
-        "vuepress": "^1.2.0",
         "@vuepress/plugin-back-to-top": "^1.2.0",
-        "@vuepress/plugin-nprogress": "^1.2.0"
+        "@vuepress/plugin-nprogress": "^1.2.0",
+        "@vuepress/plugin-pwa": "^1.2.0",
+        "gh-pages": "^2.1.1",
+        "vuepress": "^1.2.0"
     }
 }
