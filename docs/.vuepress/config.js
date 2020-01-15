@@ -44,7 +44,11 @@ module.exports = {
         sidebar: 'auto',
         lastUpdated: 'Last Updated', // string | boolean
         smoothScroll: true,
-        displayAllHeaders: true
+        displayAllHeaders: true,
+        activeHeaderLinks: false,
+        nextLinks: true,
+        prevLinks: true,
+        smoothScroll: true
     },
     plugins:[
         '@vuepress/back-to-top',
@@ -54,7 +58,8 @@ module.exports = {
         ['@vuepress/pwa', { 
             updatePopup: true,
             serviceWorker: true
-        }]
+        }],
+        '@vuepress/active-header-links'
     ]
 
 
