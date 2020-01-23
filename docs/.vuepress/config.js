@@ -80,7 +80,7 @@ module.exports = {
                 {
                     title:'应用',
                     children:[
-                        '/app/aiinvest',
+                        '/app/aiinvest/',
                         'quant'
                     ]
                 },
