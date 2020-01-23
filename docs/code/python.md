@@ -1,6 +1,3 @@
----
-sidebar: auto
----
 # python
 
 ## 调用
