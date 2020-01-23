@@ -1,0 +1,32 @@
+# matplotlib
+
+[matplotlib/gallery](https://matplotlib.org/gallery/index.html)
+
+图标非常的多，大概分为几类：
+
+*   [Lines, bars and markers](https://matplotlib.org/gallery/index.html#lines-bars-and-markers)
+*   [Images, contours and fields](https://matplotlib.org/gallery/index.html#images-contours-and-fields)
+*   [Subplots, axes and figures](https://matplotlib.org/gallery/index.html#subplots-axes-and-figures)
+*   [Statistics](https://matplotlib.org/gallery/index.html#statistics)
+*   [Pie and polar charts](https://matplotlib.org/gallery/index.html#pie-and-polar-charts)
+*   [Text, labels and annotations](https://matplotlib.org/gallery/index.html#text-labels-and-annotations)
+*   [Pyplot](https://matplotlib.org/gallery/index.html#pyplot)
+*   [Color](https://matplotlib.org/gallery/index.html#color)
+*   [Shapes and collections](https://matplotlib.org/gallery/index.html#shapes-and-collections)
+*   [Style sheets](https://matplotlib.org/gallery/index.html#style-sheets)
+*   [Axes Grid](https://matplotlib.org/gallery/index.html#axes-grid)
+*   [Axis Artist](https://matplotlib.org/gallery/index.html#axis-artist)
+*   [Showcase](https://matplotlib.org/gallery/index.html#showcase)
+*   [Animation](https://matplotlib.org/gallery/index.html#animation)
+*   [Event handling](https://matplotlib.org/gallery/index.html#event-handling)
+*   [Front Page](https://matplotlib.org/gallery/index.html#front-page)
+*   [Miscellaneous](https://matplotlib.org/gallery/index.html#miscellaneous)
+*   [3D plotting](https://matplotlib.org/gallery/index.html#d-plotting)
+*   [Our Favorite Recipes](https://matplotlib.org/gallery/index.html#our-favorite-recipes)
+*   [Scales](https://matplotlib.org/gallery/index.html#scales)
+*   [Specialty Plots](https://matplotlib.org/gallery/index.html#specialty-plots)
+*   [Ticks and spines](https://matplotlib.org/gallery/index.html#ticks-and-spines)
+*   [Units](https://matplotlib.org/gallery/index.html#units)
+*   [Embedding Matplotlib in graphical user interfaces](https://matplotlib.org/gallery/index.html#embedding-matplotlib-in-graphical-user-interfaces)
+*   [Userdemo](https://matplotlib.org/gallery/index.html#userdemo)
+*   [Widgets](https://matplotlib.org/gallery/index.html#widgets)

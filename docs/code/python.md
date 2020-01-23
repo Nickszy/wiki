@@ -1,5 +1,5 @@
 ---
-style: plain
+sidebar: auto
 ---
 # python
 

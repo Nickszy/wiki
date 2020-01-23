@@ -9,24 +9,10 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Guide', link: '/guide/' },
-            {
-                text:'数据科学',
-                items:[
-                    { text:'RoadMap',link: '/datascience/'},
-                    { text: '一 初识数据科学', link: '/datascience/first_learn.md' },
-                    { text: '二 机器学习（sklearn）', link: '/datascience/machine_learning.md' },
-                    { text: '三 Kaggle实践', link: '/datascience/Kaggle.md' }
-                ]
-            },
+            { text: '数据科学', link:'/datascience/'},
             { text: '经济', link: '/finance/' },
-            {
-                text: 'fintech', 
-                items: [
-                    { text: '区块链', link: '/blockchain/' },
-                    { text: '量化投资', link: '/blockchain/' },
-                    { text: '智能投顾', link: '/app/aiinvest/' },
-                ]
-            },
+            { text: 'fintech',link:'/fintech/'},
+            { text: '历史', link:'/history/' },
             {
                 text: '工具',
                 items: [
@@ -41,7 +27,72 @@ module.exports = {
             { text: 'blog', link: 'https://blog.shenzheyu.com/'}
 
         ],
-        sidebar: 'auto',
+        sidebar: {
+            '/datascience/': [
+                '',
+                {
+                    title: '数据建模和分析',
+                    children: [
+                        'numpy',
+                        'pandas',
+                        'sklearn'
+                    ]
+                },
+                {
+                    title: '数据可视化',
+                    children: [
+                        'matplotlib',
+                        'seaborn',
+                        'pyecharts'
+                    ]
+                },
+                {
+                    title:'大数据',
+                    children:[
+                        'hadoop',
+                        'spark',
+                        'kafka'
+                    ]
+                },
+                {
+                    title:'实战',
+                    children:[
+                        'kaggle'
+                    ]
+                }
+            ],
+            '/finance/':[
+                '',
+                {
+                    title: '宏观经济',
+                    children:[
+                        'market'
+                    ]
+                },
+                {
+                    title: '金融市场与产品',
+                    children:[
+                        'market',
+                        'financial_engineering',
+                        'invest',
+                    ]
+                },
+                {
+                    title:'应用',
+                    children:[
+                        '/app/aiinvest',
+                        'quant'
+                    ]
+                },
+                '/history/'
+            ],
+            '/fintech/':[
+                '',
+                '/datascience/',
+                '/finance/',
+                '/blockchain/'
+            ]
+        },
         lastUpdated: 'Last Updated', // string | boolean
         smoothScroll: true,
         displayAllHeaders: true,
