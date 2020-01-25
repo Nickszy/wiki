@@ -32,6 +32,7 @@ module.exports = {
                 '',
                 {
                     title: '数据建模和分析',
+                    collapsable: false,
                     children: [
                         'numpy',
                         'pandas',
@@ -40,6 +41,7 @@ module.exports = {
                 },
                 {
                     title: '数据可视化',
+                    collapsable: false,
                     children: [
                         'matplotlib',
                         'seaborn',
@@ -48,6 +50,7 @@ module.exports = {
                 },
                 {
                     title:'大数据',
+                    collapsable: false,
                     children:[
                         'hadoop',
                         'spark',
@@ -55,7 +58,8 @@ module.exports = {
                     ]
                 },
                 {
-                    title:'实战',
+                    title: '实战', 
+                    collapsable: false,
                     children:[
                         'kaggle'
                     ]
@@ -65,12 +69,14 @@ module.exports = {
                 '',
                 {
                     title: '宏观经济',
+                    collapsable: false,
                     children:[
                         'market'
                     ]
                 },
                 {
                     title: '金融市场与产品',
+                    collapsable: false,
                     children:[
                         'market',
                         'financial_engineering',
@@ -79,6 +85,7 @@ module.exports = {
                 },
                 {
                     title:'应用',
+                    collapsable: false,
                     children:[
                         '/app/aiinvest/',
                         'quant'
@@ -95,7 +102,6 @@ module.exports = {
         },
         lastUpdated: 'Last Updated', // string | boolean
         smoothScroll: true,
-        displayAllHeaders: true,
         activeHeaderLinks: false,
         nextLinks: true,
         prevLinks: true,
@@ -110,7 +116,8 @@ module.exports = {
             updatePopup: true,
             serviceWorker: true
         }],
-        '@vuepress/active-header-links'
+        '@vuepress/active-header-links',
+        '@vuepress/medium-zoom'
     ]
 
 
