@@ -105,7 +105,8 @@ module.exports = {
         activeHeaderLinks: false,
         nextLinks: true,
         prevLinks: true,
-        smoothScroll: true
+        smoothScroll: true,
+        lastUpdated: '上次更新'
     },
     plugins:[
         '@vuepress/back-to-top',
@@ -117,7 +118,17 @@ module.exports = {
             serviceWorker: true
         }],
         '@vuepress/active-header-links',
-        '@vuepress/medium-zoom'
+        '@vuepress/medium-zoom',
+        [
+            '@vuepress/last-updated',
+            {
+                transformer: (timestamp) => {
+                    const moment = require('moment')
+                    moment.locale('zh-CN')
+                    return moment(timestamp).format('llll'); 
+                }
+            }
+        ]
     ]
 
 
