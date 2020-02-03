@@ -1,5 +1,7 @@
 # Pandas
 
+## 数据类型
+
 1. Series
 
 一维数组表。由`pd.index``pd.value`这两个部分组成。

@@ -6,11 +6,9 @@
 
 ## competitions
 
+##  cli
 
-
-##  Kaggle-cli
-
-### cli安装
+### 安装
 
 ```cmd
 pip install kaggle
