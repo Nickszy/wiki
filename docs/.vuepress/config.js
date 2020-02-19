@@ -20,7 +20,7 @@ module.exports = {
                     { text: 'nodejs', link: '/code/nodejs.md' },
                     ]
             },
-            { text: 'blog', link: 'https://blog.shenzheyu.com/'},
+            { text: 'blog', link: 'https://nickszy.github.io/'},
             { text: 'github' , link: 'https://github.com/nickszy'}
         ],
         sidebar: {
@@ -120,7 +120,7 @@ module.exports = {
                     title:'应用',
                     collapsable: false,
                     children:[
-                        '/app/aiinvest/',
+                        '/fintech/aiinvest/',
                         'quant'
                     ]
                 },
@@ -128,13 +128,12 @@ module.exports = {
             ],
             '/fintech/':[
                 '',
-                '/datascience/',
-                '/finance/',
-                '/blockchain/'
+                '/fintech/blockchain/'
             ],
             '/deploy/':[
                 '',
                 'linux',
+                'nginx',
                 'mysql',
             ]
         },
