@@ -10,22 +10,18 @@ module.exports = {
         nav: [
             { text: 'Guide', link: '/guide/' },
             { text: '数据科学', link:'/datascience/'},
+            { text: 'python', link:'/python/'},
             { text: '经济', link: '/finance/' },
             { text: 'fintech',link:'/fintech/'},
-            { text: '历史', link:'/history/' },
+            { text: 'Deploy', link:'/deploy/'},
             {
                 text: '工具',
                 items: [
-                    { text: 'python', link: '/code/python.md' },
-                    { text: 'django', link: '/code/django.md' },
-                    { text: 'mysql', link: '/code/mysql.md' },
-                    { text: 'pyecharts', link: '/code/pyecharts.md' },
-                    { text: 'spider', link: '/code/spider.md' },
                     { text: 'nodejs', link: '/code/nodejs.md' },
                     ]
             },
-            { text: 'blog', link: 'https://blog.shenzheyu.com/'}
-
+            { text: 'blog', link: 'https://blog.shenzheyu.com/'},
+            { text: 'github' , link: 'https://github.com/nickszy'}
         ],
         sidebar: {
             '/datascience/': [
@@ -49,19 +45,56 @@ module.exports = {
                     ]
                 },
                 {
-                    title:'大数据',
+                    title: '大数据',
                     collapsable: false,
-                    children:[
+                    children: [
                         'hadoop',
                         'spark',
                         'kafka'
                     ]
                 },
                 {
-                    title: '实战', 
+                    title: '实战',
                     collapsable: false,
-                    children:[
-                        'kaggle'
+                    children: [
+                        'kaggle',
+                        'tushare2mysql'
+                    ]
+                }
+            ], 
+            '/python/': [
+                '',
+                {
+                    title: '基础',
+                    collapsable: false,
+                    children: [
+                        'python_fdmt',
+                        'python_package',
+                        'time&calender'
+                    ]
+                },
+                {
+                    title: 'python与数据处理',
+                    collapsable: false,
+                    children: [
+                        '/datascience/',
+                        'pyecharts'
+                    ]
+                },
+                {
+                    title: 'python网络',
+                    collapsable: false,
+                    children: [
+                        'django',
+                        'spider',
+                        'pandas+sqlalchemy'
+                    ]
+                },
+                {
+                    title: 'python进阶',
+                    collapsable: false,
+                    children: [
+                        'autoaction'
                     ]
                 }
             ],
@@ -98,6 +131,11 @@ module.exports = {
                 '/datascience/',
                 '/finance/',
                 '/blockchain/'
+            ],
+            '/deploy/':[
+                '',
+                'linux',
+                'mysql',
             ]
         },
         lastUpdated: 'Last Updated', // string | boolean

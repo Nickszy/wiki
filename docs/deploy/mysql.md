@@ -1,8 +1,8 @@
 # MySQL
 
-## 对数据库的操作
+## 对 MySQL 的操作
 
-```python
+```sql
 # 登录
 mysql -u name -p
 # 创建数据库
@@ -14,7 +14,7 @@ drop database demo;
 use demo;
 ```
 
-## 对数据表的操作
+## 对某个数据库的操作
 
 ### 创建数据表
 
@@ -81,6 +81,7 @@ UNION [ALL] # 不添加all可自动删重
 ```
 
 ### 多表查询 join
+
 ```sql
 *   **INNER JOIN（内连接,或等值连接）**：获取两个表中字段匹配关系的记录。
 *   **LEFT JOIN（左连接）：**获取左表所有记录，即使右表没有对应匹配的记录。
@@ -89,18 +90,26 @@ UNION [ALL] # 不添加all可自动删重
 
 ### 事务
 
+还没写
 
 
-## 数据库的基本设置
+## 其他
+
+### 数据库的基本设置
 
 ```mysql
 set global time_zone='+8:00';  #设置数据库的时区
 ```
 
-## python 对数据库进行操作
-```cmd
+### 利用Python 对数据库进行操作
+
+一种是在python中写sql代码，然后传入mysql中；另一种是借助SQLalchemy或者django-model等ORM库实现对数据库的操作。
+
+```shell
 # python3
 pip install mysqlclient
 ```
 
+python操作的其他几种方式：
 
+- [pandas+SQLalchemy对数据库进行操作](../python/pandas+sqlalchemy)
