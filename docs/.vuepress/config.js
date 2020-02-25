@@ -65,28 +65,35 @@ module.exports = {
             '/python/': [
                 '',
                 {
-                    title: '基础',
+                    title: 'python',
                     collapsable: false,
                     children: [
-                        'python_fdmt',
+                        'python_data',
                         'python_package',
-                        'time&calender'
+                        'time'
                     ]
                 },
                 {
-                    title: 'python与数据处理',
+                    title: '数据处理',
                     collapsable: false,
                     children: [
-                        '/datascience/',
+                        'pandas',
                         'pyecharts'
                     ]
                 },
                 {
-                    title: 'python网络',
+                    title: 'web与爬虫',
                     collapsable: false,
                     children: [
                         'django',
                         'spider',
+                    ]
+                },
+                {
+                    title:'操作数据库',
+                    collapsable:false,
+                    children:[
+                        // 'django_orm',
                         'pandas+sqlalchemy'
                     ]
                 },
@@ -94,7 +101,7 @@ module.exports = {
                     title: 'python进阶',
                     collapsable: false,
                     children: [
-                        'autoaction'
+                        'aotuaction'
                     ]
                 }
             ],
@@ -111,7 +118,6 @@ module.exports = {
                     title: '金融市场与产品',
                     collapsable: false,
                     children:[
-                        'market',
                         'financial_engineering',
                         'invest',
                     ]
@@ -124,7 +130,7 @@ module.exports = {
                         'quant'
                     ]
                 },
-                '/history/'
+                '/finance/history/'
             ],
             '/fintech/':[
                 '',
@@ -132,9 +138,9 @@ module.exports = {
             ],
             '/deploy/':[
                 '',
-                'linux',
-                'nginx',
+                'linux', 
                 'mysql',
+                'nginx',
             ]
         },
         lastUpdated: 'Last Updated', // string | boolean
