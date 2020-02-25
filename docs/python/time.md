@@ -9,6 +9,7 @@
 同时时间有自己的格式，也有用 str 来表示时间的。
 
 [momentjs](http://momentjs.cn/)是一个 javascript 的时间处理库，也值得大家借鉴。
+
 ## time
 
 time 是 python 中的标准库，他实现的更多的是与内核相关的时间操作。
@@ -24,3 +25,6 @@ datetime 是也是 python 的标准库，当它依赖于 time 的一些函数，
 ### bisnuss calender
 ### calender
 
+### pytz 
+
+uts
