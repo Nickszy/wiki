@@ -31,7 +31,7 @@ pandas 可以借助其 io 中的 `read_sql` 和各个类型的 `to_sql` 方法�
 ### 存入乱码
 
 ```text
-engine = create_engine(str(r"mysql+mysqldb://%s:" + '%s' + "@%s/%s?charset=utf8") % (user, password, host, db))
+engine = create_engine(str(r"mysql://%s:" + '%s' + "@%s/%s?charset=utf8") % (user, password, host, db))
 ```
 
 ## [pandas.read_sql](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html)

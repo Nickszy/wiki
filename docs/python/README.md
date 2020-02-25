@@ -23,7 +23,11 @@ linux：[鸟哥的私房菜](http://linux.vbird.org/)、进阶-> apue《环境�
 
 web： Flask、Django
 
-算法、大数据、爬虫（requests、beautifulsoup、scrapy、xpath）
+爬虫：requests、beautifulsoup、scrapy、xpath
+
+算法：leetcode
+
+大数据：Hadoop
 
 
 ### 进阶

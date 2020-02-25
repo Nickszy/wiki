@@ -1,5 +1,7 @@
 # Pandas
 
+Pandas中的DataFrame是我们使用最多的数据结构，它与我们平时接触的excel很像。
+
 ## 数据类型
 
 1. Series
