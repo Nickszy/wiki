@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>初识 linux | Knowledge Base</title>
+    <meta name="description" content="to ba a better fintecher">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/wiki/jedi.jpg">
+  <link rel="manifest" href="/wiki/manifest.json">
+    
+    <link rel="preload" href="/wiki/assets/css/0.styles.d314dc1e.css" as="style"><link rel="preload" href="/wiki/assets/js/app.391b5de8.js" as="script"><link rel="preload" href="/wiki/assets/js/2.70c9b889.js" as="script"><link rel="preload" href="/wiki/assets/js/30.45e71669.js" as="script"><link rel="preload" href="/wiki/assets/js/3.673ca8d1.js" as="script"><link rel="prefetch" href="/wiki/assets/js/10.d88fc581.js"><link rel="prefetch" href="/wiki/assets/js/11.30a81460.js"><link rel="prefetch" href="/wiki/assets/js/12.71b9f37a.js"><link rel="prefetch" href="/wiki/assets/js/13.6a48e348.js"><link rel="prefetch" href="/wiki/assets/js/14.cbc19f26.js"><link rel="prefetch" href="/wiki/assets/js/15.f786099c.js"><link rel="prefetch" href="/wiki/assets/js/16.7560cca1.js"><link rel="prefetch" href="/wiki/assets/js/17.b2e4109f.js"><link rel="prefetch" href="/wiki/assets/js/18.e3729362.js"><link rel="prefetch" href="/wiki/assets/js/19.3833cc2c.js"><link rel="prefetch" href="/wiki/assets/js/20.3c2246cb.js"><link rel="prefetch" href="/wiki/assets/js/21.d5c49d90.js"><link rel="prefetch" href="/wiki/assets/js/22.45a23643.js"><link rel="prefetch" href="/wiki/assets/js/23.a32e8661.js"><link rel="prefetch" href="/wiki/assets/js/24.7b2eb917.js"><link rel="prefetch" href="/wiki/assets/js/25.ae736de2.js"><link rel="prefetch" href="/wiki/assets/js/26.68a434df.js"><link rel="prefetch" href="/wiki/assets/js/27.1e497748.js"><link rel="prefetch" href="/wiki/assets/js/28.eb380047.js"><link rel="prefetch" href="/wiki/assets/js/29.8ae0e744.js"><link rel="prefetch" href="/wiki/assets/js/31.a0b60088.js"><link rel="prefetch" href="/wiki/assets/js/32.a36719fe.js"><link rel="prefetch" href="/wiki/assets/js/33.2c17c794.js"><link rel="prefetch" href="/wiki/assets/js/34.12d94a78.js"><link rel="prefetch" href="/wiki/assets/js/35.8bb11e12.js"><link rel="prefetch" href="/wiki/assets/js/36.c5311cf2.js"><link rel="prefetch" href="/wiki/assets/js/37.eaf6a494.js"><link rel="prefetch" href="/wiki/assets/js/38.78557e6d.js"><link rel="prefetch" href="/wiki/assets/js/39.a8fe5386.js"><link rel="prefetch" href="/wiki/assets/js/4.1b07185d.js"><link rel="prefetch" href="/wiki/assets/js/40.19ade7c8.js"><link rel="prefetch" href="/wiki/assets/js/41.9f4b0637.js"><link rel="prefetch" href="/wiki/assets/js/42.b07ee8b2.js"><link rel="prefetch" href="/wiki/assets/js/43.4a9bf1ac.js"><link rel="prefetch" href="/wiki/assets/js/44.628a1f28.js"><link rel="prefetch" href="/wiki/assets/js/45.79c1a0aa.js"><link rel="prefetch" href="/wiki/assets/js/46.fc7de21a.js"><link rel="prefetch" href="/wiki/assets/js/47.e01d81fe.js"><link rel="prefetch" href="/wiki/assets/js/48.753413df.js"><link rel="prefetch" href="/wiki/assets/js/49.dde454e9.js"><link rel="prefetch" href="/wiki/assets/js/5.e2841355.js"><link rel="prefetch" href="/wiki/assets/js/50.81bd31fe.js"><link rel="prefetch" href="/wiki/assets/js/51.da3c55e3.js"><link rel="prefetch" href="/wiki/assets/js/52.a76ad29d.js"><link rel="prefetch" href="/wiki/assets/js/53.57ad607c.js"><link rel="prefetch" href="/wiki/assets/js/54.715c0aef.js"><link rel="prefetch" href="/wiki/assets/js/55.b1b1197c.js"><link rel="prefetch" href="/wiki/assets/js/56.cbfd48cb.js"><link rel="prefetch" href="/wiki/assets/js/57.73f70629.js"><link rel="prefetch" href="/wiki/assets/js/58.1dcc5a78.js"><link rel="prefetch" href="/wiki/assets/js/59.2482bfaf.js"><link rel="prefetch" href="/wiki/assets/js/6.d06a3710.js"><link rel="prefetch" href="/wiki/assets/js/7.242b74d5.js"><link rel="prefetch" href="/wiki/assets/js/8.57a6f789.js"><link rel="prefetch" href="/wiki/assets/js/9.e1a3961e.js">
+    <link rel="stylesheet" href="/wiki/assets/css/0.styles.d314dc1e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wiki/" class="home-link router-link-active"><!----> <span class="site-name">Knowledge Base</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wiki/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/wiki/datascience/" class="nav-link">
+  数据科学
+</a></div><div class="nav-item"><a href="/wiki/python/" class="nav-link">
+  python
+</a></div><div class="nav-item"><a href="/wiki/finance/" class="nav-link">
+  经济
+</a></div><div class="nav-item"><a href="/wiki/fintech/" class="nav-link">
+  fintech
+</a></div><div class="nav-item"><a href="/wiki/deploy/" class="nav-link router-link-active">
+  Deploy
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wiki/code/nodejs.html" class="nav-link">
+  nodejs
+</a></li></ul></div></div><div class="nav-item"><a href="https://nickszy.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/nickszy" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wiki/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/wiki/datascience/" class="nav-link">
+  数据科学
+</a></div><div class="nav-item"><a href="/wiki/python/" class="nav-link">
+  python
+</a></div><div class="nav-item"><a href="/wiki/finance/" class="nav-link">
+  经济
+</a></div><div class="nav-item"><a href="/wiki/fintech/" class="nav-link">
+  fintech
+</a></div><div class="nav-item"><a href="/wiki/deploy/" class="nav-link router-link-active">
+  Deploy
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wiki/code/nodejs.html" class="nav-link">
+  nodejs
+</a></li></ul></div></div><div class="nav-item"><a href="https://nickszy.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/nickszy" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wiki/deploy/" class="sidebar-link">部署</a></li><li><a href="/wiki/deploy/linux.html" class="active sidebar-link">初识 linux</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/wiki/deploy/linux.html#下载与安装" class="sidebar-link">下载与安装</a></li></ul></li><li><a href="/wiki/deploy/mysql.html" class="sidebar-link">MySQL</a></li><li><a href="/wiki/deploy/nginx.html" class="sidebar-link">Nginx</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="初识-linux"><a href="#初识-linux" class="header-anchor">#</a> 初识 linux</h1> <h2 id="下载与安装"><a href="#下载与安装" class="header-anchor">#</a> 下载与安装</h2> <p>遇到最多的就是通过命令行去下载安装</p> <p>rpm是由红帽公司开发的软件包管理方式，使用rpm我们可以方便的进行软件的安装、查询、卸载、升级等工作。但是rpm软件包之间的依赖性问题往往会很繁琐,尤其是软件由多个rpm包组成时。</p> <p>Yum（全称为 Yellow dog Updater, Modified）是一个在Fedora和RedHat以及SUSE中的Shell前端软件包管理器。基於RPM包管理，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软体包，无须繁琐地一次次下载、安装。</p> <p>rpm 是linux的一种软件包名称，以.rmp结尾，安装的时候语法为：rpm -ivh，rpm包的安装有一个很大的缺点就是文件的关联性太大，有时候装一个软件要安装很多其他的软件包，很麻烦，所以为此RedHat小红帽开发了yum安装方法，他可以彻底解决这个关联性的问题，很方便，只要配置两个文件即可安装，安装方法是：yum -y install ，yum并不是一中包，而是安装包的软件。</p> <p>简单点说, rpm 只能安装已经下载到本地机器上的rpm 包. yum能在线下载并安装rpm包,能更新系统,且还能自动处理包与包之间的依赖问题,这个是rpm 工具所不具备的。</p> <p><strong>yum与apt-get的相同点：</strong></p> <p>apt-get属于ubuntu、Debian的包管理工具</p> <p>yum则属于Redhat、Centos包管理工具</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2020年2月19日星期三 09:07</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wiki/deploy/" class="prev router-link-active">
+        部署
+      </a></span> <span class="next"><a href="/wiki/deploy/mysql.html">
+        MySQL
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/wiki/assets/js/app.391b5de8.js" defer></script><script src="/wiki/assets/js/2.70c9b889.js" defer></script><script src="/wiki/assets/js/30.45e71669.js" defer></script><script src="/wiki/assets/js/3.673ca8d1.js" defer></script>
+  </body>
+</html>
