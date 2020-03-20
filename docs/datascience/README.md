@@ -6,7 +6,7 @@
 
 因此我写下这个知识库，不仅希望让自己学习的更好，也希望能够帮助大家，同时给大家在学习路上提供一些借鉴共同成长。
 
-在学习的路上我认为有两点非常的重要，一是统计，二是编程，只要将这两个掌握好，无论以后是否从事数据科学相关的行业，也不会留有遗憾了。
+数据科学有两道门槛，一是统计，二是编程。只要将这两个掌握好，无论以后是否从事数据科学相关的行业，相信大家也不会留有遗憾了。
 
 ## 做什么
 
@@ -20,10 +20,10 @@
 
  |模块|运算与处理|可视化|数据库|
  |-|-|-|-|
- |入门|numpy pandas |matplotlib seaborn|mysql|
- |进阶|sklearn tensorflow|pyecharts d3|redis|
- |大数据|docker k8s hive spark kafka|echarts|Hadoop(hdfs)|
- |工程|spider |Django Flack  PyQt|celery SQLalchemy|
+ |入门|numpy pandas |matplotlib seaborn|mysql SQLalchemy|
+ |进阶|sklearn tensorflow|pyecharts |redis mongoDB|
+ |分布式计算|hive spark kafka|echarts d3 |Hadoop(hdfs)|
+ |工程|spider |Django Flack  PyQt|celery |
 
 ## 推荐书籍及网站
 
