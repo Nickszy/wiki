@@ -13,13 +13,13 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-# 初始化数据库连接，使用pymysql模块
-# MySQL的用户：root, 密码:123456, 端口：3306,数据库：tushare
-engine = create_engine('mysql+pymysql://root:123456@localhost:3306/tushare')
+# 初始化数据库连接，使用mysqlclient模块
+# 例：用户名：root, 密码:123456, 端口：3306,数据库：tushare
+engine = create_engine('mysql://root:123456@localhost:3306/tushare')
 
 # 查询语句，选出demo表中的所有数据
 sql = '''
-      select * from tushare;
+      select * from demo;
       '''
 
 # read_sql_query的两个参数: sql语句， 数据库连接
