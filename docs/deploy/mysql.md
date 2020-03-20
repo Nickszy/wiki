@@ -1,5 +1,9 @@
 # MySQL
 
+用法：sql语句、索引、事务
+
+深究： 连接池 引擎
+
 ## 对 MySQL 的操作
 
 ```sql
@@ -13,6 +17,10 @@ drop database demo;
 #使用某数据库
 use demo;
 ```
+
+## 用户和权限设置
+
+不能总是用超级管理员的身份去操作数据库。
 
 ## 对某个数据库的操作
 
@@ -42,7 +50,7 @@ INSERT INTO table_name
 VALUES 
 ( value1, value2,...valueN );
 #查
-SELECT column_name,column_name
+SELECT [DISTINCT] column_name,column_name
 FROM table_name 
 [WHERE Clause]  
 [LIMIT N][ OFFSET M]

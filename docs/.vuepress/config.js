@@ -11,7 +11,7 @@ module.exports = {
             { text: 'Guide', link: '/guide/' },
             { text: '数据科学', link:'/datascience/'},
             { text: 'python', link:'/python/'},
-            { text: '经济', link: '/finance/' },
+            { text: '金融', link: '/finance/' },
             { text: 'fintech',link:'/fintech/'},
             { text: 'Deploy', link:'/deploy/'},
             {
@@ -32,6 +32,7 @@ module.exports = {
                     children: [
                         'numpy',
                         'pandas',
+                        'ml-des',
                         'sklearn'
                     ]
                 },
@@ -65,10 +66,11 @@ module.exports = {
             '/python/': [
                 '',
                 {
-                    title: 'python',
+                    title: '基石',
                     collapsable: false,
                     children: [
                         'python_data',
+                        'python_def',
                         'python_package',
                         'time'
                     ]
@@ -93,7 +95,7 @@ module.exports = {
                     title:'操作数据库',
                     collapsable:false,
                     children:[
-                        // 'django_orm',
+                        'django_orm',
                         'pandas+sqlalchemy'
                     ]
                 },
@@ -171,8 +173,13 @@ module.exports = {
                     return moment(timestamp).format('llll'); 
                 }
             }
+        ],
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-120544317-3' // UA-00000000-0
+            }
         ]
     ]
-
 
 }

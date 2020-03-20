@@ -1,13 +1,4 @@
----
-catagery: 
- - io
-tags:
- - pandas
- - sqlalchemy
----
-
-
-# pandas+SQLalchemy
+# pandas_sql
 
 pandas 可以借助其 io 中的 `read_sql` 和各个类型的 `to_sql` 方法来实现从数据库中获取数据，修改数据。
 

@@ -17,18 +17,15 @@
 
 ## 如何学习
 
-linux：[鸟哥的私房菜](http://linux.vbird.org/)、进阶-> apue《环境高级编程》
+算法：leetcode
 
-数据库： mysql 数据库连接池
+数据分析：Numpy、Pandas、scipy
 
-web： Flask、Django
+可视化：matplotlib、seaborn
 
 爬虫：requests、beautifulsoup、scrapy、xpath
 
-算法：leetcode
-
-大数据：Hadoop
-
+web： Flask、Django、FastAPI
 
 ### 进阶
 

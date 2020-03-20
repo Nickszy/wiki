@@ -62,6 +62,26 @@ urlpatterns = [
 
 #### 模板函数
 
+1. 加载静态资源
+
+```html
+
+{ load statics}
+
+{statics 'js/aboute4324.js'}
+
+```
+
+2. 传参
+
+```
+//简单语句
+{% if xxx %}
+{% end if %}
+//数据
+{{ post.title}}
+```
+
 
 ## model
 
@@ -72,7 +92,7 @@ urlpatterns = [
 pip install mysqlclient
 ```
 
-```mysql
+```sql
 set global time_zone='+8:00';
 ```
 

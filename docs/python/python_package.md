@@ -1,6 +1,8 @@
-# package
+# 调用与包
 
-## 调用
+## import
+
+在编写python文件时总免不了要调用到第三方的包和自己学好的文件。
 
 #### 自定义文件
 
@@ -35,21 +37,24 @@ a.func()
 
 [更详细](https://blog.csdn.net/qq_32897143/article/details/79960432)
 
-## 库
+## 软件储存库
 
-### 自己写个库
+大家最熟悉的就是 Pypi 了，全称是Python Package Index，是python官方的第三方软件包储存库，pip在内的某些软件包管理器使用PyPI作为软件包及其依赖项的默认源。
+
+### 自己发布一个软件包
 
 1. 文件结构
-```path
+
+```shell
 //文件夹树
 ├── LICENSE 
 ├── README.md 
 ├── MANIFEST.in 
-├── lib
+├── example_pkg
 │ ├── __init__.py 
 │ ├── workspace.py 
 │ ├── database.py 
-├── setup.cfg 
+├── tests/
 ├── setup.py
 ```
 
