@@ -11,6 +11,8 @@
 
 time 是 python 中的标准库，他实现的更多的是与内核相关的时间操作。
 
+![time](./time.png)
+
 ## datetime
 
 datetime 是也是 python 的标准库，当它依赖于 time 的一些函数，有点类似于 matplotlib 和 seaborn 的关系。
