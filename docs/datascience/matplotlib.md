@@ -30,3 +30,67 @@
 *   [Embedding Matplotlib in graphical user interfaces](https://matplotlib.org/gallery/index.html#embedding-matplotlib-in-graphical-user-interfaces)
 *   [Userdemo](https://matplotlib.org/gallery/index.html#userdemo)
 *   [Widgets](https://matplotlib.org/gallery/index.html#widgets)
+
+
+## pyplot
+
+这是 matplotlib 中绘制图片的文件。
+
+```py
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')  # 使用ggplot的colormap
+```
+
+
+# 创建窗口
+
+```
+plt.figure(figsize=(15,10)) # 创建图像窗口
+```
+
+## 几种栅格化方法
+
+```
+
+# subplot
+# 指明绘图区域
+# 每次声明之后就可以切换地址
+plt.subplot(2,2,1)   # 多图绘制，2行2列第一个图
+plt.subplot('221')   # 另外一个图
+
+# subplots
+# 直接生成不同的区域
+fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
+fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2)
+
+# subplot2grid
+plt.subplot2grid((3,3),(1,2),rowspan=2,colspan=2)  
+```
+
+
+# 绘制图表
+
+```py
+plt.scarter()
+plt.plot()
+plt.bar()
+plt.text()
+plt.table()
+plt.arrow()
+```
+
+## 进阶
+
+### 文字
+
+text
+
+###  Figure
+
+### Axis
+
+### Colormap
+
+
+
+

@@ -108,3 +108,30 @@ DATABASES = {
   }
 }
 ```
+
+
+
+## admin
+
+admin 可以用来查看管理 models 中的数据。
+
+非常的方便。
+
+有一些设置的变量
+
+
+```py
+#
+fields = ('url', 'title', 'content')
+
+#内部
+fieldsets = (
+        (None, {
+            'fields': ('url', 'title', 'content', 'sites')
+        }),
+        ('Advanced options', {
+            'classes': ('collapse',),
+            'fields': ('registration_required', 'template_name'),
+        }),
+    )
+```

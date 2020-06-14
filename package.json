@@ -5,14 +5,18 @@
         "deploy": "start deploy.sh"
     },
     "devDependencies": {
-        "@vuepress/plugin-back-to-top": "^1.2.0",
-        "@vuepress/plugin-nprogress": "^1.2.0",
-        "@vuepress/plugin-pwa": "^1.2.0",
-        "@vuepress/plugin-medium-zoom": "^1.2.0",
-        "gh-pages": "^2.1.1",
-        "vuepress": "^1.2.0"
+        "@vuepress/plugin-back-to-top": "^1.5.1",
+        "@vuepress/plugin-google-analytics": "^1.5.1",
+        "@vuepress/plugin-medium-zoom": "^1.5.1",
+        "@vuepress/plugin-nprogress": "^1.5.1",
+        "@vuepress/plugin-pwa": "^1.5.1",
+        "gh-pages": "^2.2.0",
+        "vuepress": "^1.2.0",
+        "vuepress-plugin-mathjax": "^1.2.8",
+        "vuepress-plugin-medium-zoom": "^1.1.8"
     },
     "dependencies": {
-        "moment": "^2.24.0"
+        "latex": "0.0.1",
+        "moment": "^2.26.0"
     }
 }

@@ -12,7 +12,7 @@ class Post(models.Model):
     ptime = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
-    class MetaL
+    class Meta:
         db_tabel='post'  #自定义数据库中的表名,默认为 f'{appname}_{classname}'
 
 # 保存

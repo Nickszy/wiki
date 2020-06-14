@@ -18,6 +18,7 @@ module.exports = {
                 text: '工具',
                 items: [
                     { text: 'nodejs', link: '/code/nodejs.md' },
+                    { text: 'map', link: '/code/map.md' },
                     ]
             },
             { text: 'blog', link: 'https://nickszy.github.io/'},
@@ -27,13 +28,22 @@ module.exports = {
             '/datascience/': [
                 '',
                 {
-                    title: '数据建模和分析',
+                    title: 'python数据处理基础',
                     collapsable: false,
                     children: [
                         'numpy',
                         'pandas',
-                        'ml-des',
-                        'sklearn'
+                    ]
+                },
+                {
+                    title: '人工智能',
+                    collapsable: false,
+                    children: [
+                        'ml_t',
+                        'ml_datapre',
+                        'ml_traditional',
+                        'ml_e',
+                        'ml_math'
                     ]
                 },
                 {
@@ -66,44 +76,61 @@ module.exports = {
             '/python/': [
                 '',
                 {
-                    title: '基石',
+                    title: '基础',
                     collapsable: false,
                     children: [
                         'python_data',
                         'python_def',
                         'python_package',
-                        'time'
+                        'time',
+                        'magic_methods'
                     ]
                 },
                 {
-                    title: '数据处理',
-                    collapsable: false,
-                    children: [
-                        'pandas',
-                        'pyecharts'
-                    ]
-                },
-                {
-                    title: 'web与爬虫',
+                    title: 'web开发',
                     collapsable: false,
                     children: [
                         'django',
-                        'spider',
+                        'django_restful',
+                        'flask',
+                        'fastapi'
                     ]
                 },
+                {
+                    title: '爬虫',
+                    collapsable: false,
+                    children: [
+                        'spider_readme',
+                        'spider_fdmt',
+                        'spider',
+                        'Charles',
+                    ]
+                }, 
                 {
                     title:'操作数据库',
                     collapsable:false,
                     children:[
+                        'sqlalchemy',
+                        'pandas+sqlalchemy',
                         'django_orm',
-                        'pandas+sqlalchemy'
+                        'redis'
+                    ]
+                },
+                {
+                    title: '👉数据科学',
+                    collapsable: false,
+                    path: '/datascience/',
+                    children: [
+                        '/datascience/numpy',
+                        '/datascience/pandas',
+                        '/datascience/pyecharts',
                     ]
                 },
                 {
                     title: 'python进阶',
                     collapsable: false,
                     children: [
-                        'aotuaction'
+                        'aotoaction'
                     ]
                 }
             ],
@@ -164,6 +191,15 @@ module.exports = {
         }],
         '@vuepress/active-header-links',
         '@vuepress/medium-zoom',
+        [
+            'vuepress-plugin-mathjax',
+            {
+                target: 'svg',
+                macros: {
+                    '*': '\\times',
+                },
+            },
+        ],
         [
             '@vuepress/last-updated',
             {

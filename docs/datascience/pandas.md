@@ -22,6 +22,7 @@ Pandas中的DataFrame是我们使用最多的数据结构，它与我们平时�
 df.shape
 df.reshape((1,1))
 df.sort_values(by=['colomns1','columns2'])
+#subset
 df = df.copy ()  #深拷贝
 ```
 
@@ -29,6 +30,7 @@ df = df.copy ()  #深拷贝
 
 ```py
 # 增
+pd.DataFrame({'columns_1':x,'columns_2':y},index=z)
 df.append(self, other, ignore_index=False, verify_integrity=False, sort=None)
 df.concat([df1,df2],axis=0) # 两张表合起来 axis 0为加行，1为加列
 DataFrame.groupby([,])
@@ -50,6 +52,8 @@ df.iloc[1,2] = 'xxx'
 df.apply()
 df.where()
 df.
+df.rename(columns={'aaa':'bbb'},inplace=True) //用bbb替换aaa
+
 ```
 
 
@@ -58,7 +62,57 @@ df.
 
 ```python
 # 1. 直接转化
-pd.to_time()
+pd.to_datetime(df['date'])
 # 2. 利用time进行转化
 
+```
+
+
+# pandas结构图
+
+我们从代码的角度去研究pandas。
+
+库依赖：matplotlib
+
+```shell
+├─api
+│  ├─extensions
+│  ├─indexers
+│  ├─types
+├─arrays
+├─compat
+│  ├─numpy
+├─core
+│  ├─arrays
+│  │  ├─sparse
+│  ├─computation
+│  ├─dtypes
+│  ├─groupby
+│  ├─indexes
+│  ├─internals
+│  ├─ops
+│  ├─reshape
+│  ├─sparse
+│  ├─tools
+│  ├─util
+│  ├─window
+├─errors
+├─io
+│  ├─clipboard
+│  ├─excel
+│  ├─formats
+│  │  ├─templates
+│  ├─json
+│  ├─sas
+├─plotting
+│  ├─_matplotlib
+├─tseries
+│  ├─frequencies
+│  ├─holiday
+│  ├─offsets
+├─util
+├─_config
+├─_libs
+│  ├─tslibs
+│  ├─window
 ```

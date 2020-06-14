@@ -40,3 +40,10 @@ web： Flask、Django、FastAPI
 - 网络教程
 
   [Joinquant教程](https://www.joinquant.com/study#python)、[Kaggle教程](https://www.kaggle.com/learn/overview)
+
+
+###  代码规范
+
+- [python 官方  pep8](https://www.python.org/dev/peps/pep-0008/#indentation)
+- [google.styleguide/pyguide](http://google.github.io/styleguide/pyguide.html)
+
