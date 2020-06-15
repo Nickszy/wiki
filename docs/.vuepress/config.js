@@ -215,6 +215,24 @@ module.exports = {
             {
                 'ga': 'UA-120544317-3' // UA-00000000-0
             }
+        ],
+        [
+            'vuepress-plugin-comment',
+            {
+                choosen: 'valine',
+                // options选项中的所有参数，会传给Valine的配置
+                options: {
+                    el: '#valine-vuepress-comment',
+                    appId: 'FuWGLp2kf6Vm2SNmN9OjQuW5-gzGzoHsz',
+                    appKey: 'tY4lCNf4VLbUHgtecebibARV',
+                    avatar: 'robohash',
+                    path: '<%- frontmatter.to.path %>',
+                    recordIP: true,
+                    visitor: true,
+                    highlight: true,
+                    placeholder:'快来写下你的想法吧'
+                }
+            }
         ]
     ]
 
