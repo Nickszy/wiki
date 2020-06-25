@@ -39,16 +39,17 @@
 ```py
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')  # 使用ggplot的colormap
+plt.style.use('seaborn')  # 使用seaborn的样式
 ```
 
 
-# 创建窗口
+## 创建窗口
 
 ```
 plt.figure(figsize=(15,10)) # 创建图像窗口
 ```
 
-## 几种栅格化方法
+### 几种栅格化方法
 
 ```
 
@@ -68,7 +69,7 @@ plt.subplot2grid((3,3),(1,2),rowspan=2,colspan=2)
 ```
 
 
-# 绘制图表
+## 绘制图表
 
 ```py
 plt.scarter()
@@ -79,11 +80,28 @@ plt.table()
 plt.arrow()
 ```
 
-## 进阶
+## more
 
 ### 文字
 
-text
+```python
+# 中文乱码问题
+from pylab import mpl
+mpl.rcParams['font.sans-serif'] = ['FangSong'] # 指定默认字体
+mpl.rcParams['axes.unicode_minus'] = False # 解决保存图像是负号'-'显示为方块的问题
+
+# 字体大小 fontsize
+plt.xticks(fontsize=20)
+```
+
+### 标签
+
+```python
+for a,b in zip(x,y):  # x，y是标签在图上的定位
+    print(a,b)
+    plt.text(a, b+1, '%.0f' % b, ha='center', va= 'bottom',fontsize=15)
+```
+
 
 ###  Figure
 
@@ -91,6 +109,8 @@ text
 
 ### Colormap
 
+### 动态图 Animation
 
+针对时间序列数据，可以用它来给不同的数据做对比，展现一个趋势
 
 
