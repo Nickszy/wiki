@@ -115,9 +115,7 @@ module.exports = {
                     children:[
                         'sqlalchemy',
                         'pandas+sqlalchemy',
-                        'django_orm',
-                        'redis'
-                    ]
+                        'django_orm'
                 },
                 {
                     title: '👉数据科学',
