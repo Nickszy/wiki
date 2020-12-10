@@ -116,6 +116,7 @@ module.exports = {
                         'sqlalchemy',
                         'pandas+sqlalchemy',
                         'django_orm'
+                    ]
                 },
                 {
                     title: '👉数据科学',
