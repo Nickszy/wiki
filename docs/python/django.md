@@ -135,3 +135,24 @@ fieldsets = (
         }),
     )
 ```
+
+## form
+
+```py
+from xxx.form improt demoform
+
+data = {
+'a':1,
+'b':2
+}
+
+form = demoform(data)
+if form.is_valid():
+  form.save()
+  ## 1vn
+  form.save(commit=Flase)
+  form.save_m2m()
+else:
+  print(form.errors)
+
+```

@@ -12,5 +12,5 @@ features:
   details: 学经济是学历史
 - title: 应用
   details: 实践出真知
-footer: Copyright © 2019-present nickszy
+footer: Copyright © 2019-2021 nickszy
 ---

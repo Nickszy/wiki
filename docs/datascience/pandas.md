@@ -6,13 +6,13 @@ Pandas中的DataFrame是我们使用最多的数据结构，它与我们平时�
 
 1. Series
 
-一维数组表。由`pd.index``pd.value`这两个部分组成。
+一维数组表。由`index` `value`这两个部分组成。
 
 2. DataFrame
 
-我用的最多的是`pd.DataFrame`这个二维的数据结构。
+我在平常用的最多的是`pd.DataFrame`这个二维的数据结构。
 
-有点类似于excel中的一张表，`df.index``df.columns`,就是表的行名和列名。
+有点类似于excel中的一张表，`index` 和 `columns` 就是表的行名和列名。
 
 [DataFrame API查找表](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 
@@ -45,13 +45,12 @@ df.at[,]
 df.iat[,] # i 表示为用integer的表示方式定查找位置
 df.loc[1,2]
 df.iloc[]
-df.ix[]
+df.ix[]  # pandas1.0已去掉此方法
 
 # 改
 df.iloc[1,2] = 'xxx'
-df.apply()
+df.apply(,axis=1)
 df.where()
-df.
 df.rename(columns={'aaa':'bbb'},inplace=True) //用bbb替换aaa
 
 ```
@@ -61,10 +60,22 @@ df.rename(columns={'aaa':'bbb'},inplace=True) //用bbb替换aaa
 
 
 ```python
-# 1. 直接转化
-pd.to_datetime(df['date'])
-# 2. 利用time进行转化
 
+time = pd.to_datetime(df['date'])
+# 后面跟.dt即可对时间进行操作
+time.dt.weekday  # 可以直接获取 day/year/week/month 等
+time.dt.strftime("%Y%m%d")  # 转化成20200613的样式
+
+```
+
+2. timedateindex
+
+如果index是是时间就不需要再加dt了，直接就能够处理。
+
+```py
+time.day
+time.week
+time.strftime("%Y%m%d")
 ```
 
 

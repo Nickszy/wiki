@@ -40,6 +40,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'ml_t',
+                        'eda',
                         'ml_datapre',
                         'ml_traditional',
                         'ml_e',
@@ -52,7 +53,8 @@ module.exports = {
                     children: [
                         'matplotlib',
                         'seaborn',
-                        'pyecharts'
+                        'pyecharts',
+                        'plotly'
                     ]
                 },
                 {
@@ -69,7 +71,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'kaggle',
-                        'tushare2mysql'
+                        'timeseries',
+                        'tushare2mysql',
                     ]
                 }
             ], 

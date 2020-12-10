@@ -3,6 +3,18 @@
 [最佳学习资料----官方文档](https://git-scm.com/book/zh/v2/)
 [git 命令大全 by 阮一峰](https://mp.weixin.qq.com/s?__biz=MzAxMTkwODIyNA==&mid=2247494311&idx=1&sn=41bfb8e16d7453966fafac462f59d096&chksm=9bbb4f48acccc65e2743e4cd1ef67f495aa68013ee653019ae37e76f3dd5b0299dc1a40ad984&mpshare=1&scene=1&srcid=&sharer_sharetime=1581865222843&sharer_shareid=4ca2e2c8b15f82ca493f700f9ff88781#rd)
 
+## 个人信息
+
+```git
+# 查看
+git config --list
+
+# 修改设置   (--global 表示全局修改)
+git config --global user.name "这里写用户名"
+git config --global user.email "这里写邮箱"
+```
+
+
 ## git 的功能点
 
 - 文件记录追踪
@@ -21,4 +33,10 @@
 
 ![修改追踪过程](https://git-scm.com/book/en/v2/images/lifecycle.png)
 
-### 
+### 行尾字符
+
+windows和mac对文件行尾的字符有问题，只需要输入以下代码就可以解决。
+
+```shell
+git config --global core.autocrlf input
+```

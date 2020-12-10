@@ -1,6 +1,6 @@
-# 监督学习
+# 机器学习
 
-### 线性回归
+## 线性回归
 
 
 ## 决策树 decision tree
@@ -13,7 +13,8 @@
 $H(D) = - \sum_{i=1}^{n}{{p_k}\log_2{p_k}}$
 
 熵的单位是比特 bit 或者 纳特 nat
-2. 选择分支 
+
+2. 分类标准 
 
 |方式|代表算法|属性选择|数据集偏好|
 |-|-|-|-|
@@ -60,13 +61,12 @@ $$Gain(D,a) = \max_{t\epsilon T_a}Gain(D,a,t)$$
 
 - 缺失值
 
-
 - 多变量决策树
 
 
 ## SVM
 
-支持向量机 Support Vector Machine
+*支持向量机 Support Vector Machine*
 
 即可以分类，也可以用来回归
 
