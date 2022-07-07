@@ -17,7 +17,7 @@
     },
     "dependencies": {
         "latex": "0.0.1",
-        "moment": "^2.26.0",
+        "moment": "^2.29.4",
         "vuepress-plugin-comment": "^0.7.3"
     }
 }
